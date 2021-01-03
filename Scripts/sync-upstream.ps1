@@ -1,5 +1,5 @@
-git config --global user.name 'your-name'
-git config --global user.email 'your-email'
+git config --global user.name 'Koala'
+git config --global user.email 'kendrick.yuen41@myhunter.cuny.edu'
 
 git pull --unshallow
 

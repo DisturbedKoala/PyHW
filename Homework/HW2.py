@@ -1,6 +1,6 @@
 import random
 
-# YOUR NAME HERE
+# Koala
 
 '''
 Problem 1
