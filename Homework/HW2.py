@@ -12,7 +12,7 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 
 
 def calculate_tax(price):
-    return round(price * 0.08875,3)
+    return round(price * 0.08875, 3)
 
 item_price = 10
 print(calculate_tax(item_price))
@@ -69,7 +69,7 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+    return (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
 
 year = 1900
 print(is_leap_year(year))
