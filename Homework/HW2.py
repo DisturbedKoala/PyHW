@@ -14,9 +14,6 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 def calculate_tax(price):
     return round(price * 1.08875, 2)
 
-item_price = 10
-print(calculate_tax(item_price))
-
 
 '''
 Problem 2
@@ -27,10 +24,6 @@ hypotenuse.
 
 def compute_hypotenuse(a, b):
     return (a ** 2 + b ** 2) ** 0.5
-
-num1 = 3
-num2 = 4
-print(compute_hypotenuse(num1, num2))
 
 
 '''
@@ -71,5 +64,3 @@ but 1900 is not.
 def is_leap_year(year):
     return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
 
-year = 1900
-print(is_leap_year(year))
