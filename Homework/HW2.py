@@ -12,7 +12,10 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 
 
 def calculate_tax(price):
-    return None
+    return round(price * 0.08875,3)
+
+item_price = 10
+print(calculate_tax(item_price))
 
 
 '''
@@ -23,7 +26,12 @@ hypotenuse.
 
 
 def compute_hypotenuse(a, b):
-    return None
+    return (a ** 2 + b ** 2) ** 0.5
+
+num1 = 3
+num2 = 4
+print(compute_hypotenuse(num1, num2))
+
 
 '''
 Problem 3
@@ -35,8 +43,7 @@ function is correct, then you should get at least 3.141 plus or minus 0.001.
 
 
 def distance(x1, y1, x2, y2):
-    return None
-
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
 # def monteCarlo(numPoints):
 #     insideCount = 0
@@ -52,6 +59,7 @@ def distance(x1, y1, x2, y2):
 #     sum += monteCarlo(100000)
 # print(sum / 10)
 
+
 '''
 Problem 4
 Write a function that determines whether a year is a leap year. There are two rules: the year has to be divisible by
@@ -61,4 +69,7 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return None
+    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+
+year = 1900
+print(is_leap_year(year))
