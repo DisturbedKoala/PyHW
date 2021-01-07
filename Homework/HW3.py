@@ -31,7 +31,7 @@ rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 
 def zodiac(year):
     zodiac_signs = ["monkey", "rooster", "dog", "pig", "rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "sheep"]
-    return f'{year} is the year of the {zodiac_signs[year % len(zodiac_signs)]}'
+    return zodiac_signs[year % len(zodiac_signs)]
 
 
 """
