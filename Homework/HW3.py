@@ -1,4 +1,4 @@
-# YOUR NAME HERE
+# Koala
 
 """
 Problem 1
@@ -7,7 +7,7 @@ Return the range of a list of ints. Assume that it is sorted.
 
 
 def list_range(arr):
-    return None
+    return arr[-1] - arr[0]
 
 
 """
@@ -18,7 +18,7 @@ elements.
 
 
 def switch(arr, a, b):
-    return None
+    return arr.append(a): arr[a] = a, arr.append(b): arr[b] = b
 
 
 """
