@@ -18,7 +18,8 @@ elements.
 
 
 def switch(arr, a, b):
-    return arr + a + b
+    arr[a], arr[b] = arr[b], arr[a]
+    return arr
 
 
 """
