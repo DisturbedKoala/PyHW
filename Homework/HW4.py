@@ -8,7 +8,7 @@ Return the average of a list of values using a while loop.
 
 def while_average(arr):
     t = 0
-    i = 1
+    i = 0
     while i < len(arr):
         t += arr[i]
         i += 1
