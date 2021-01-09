@@ -35,7 +35,10 @@ Return the number of palindromes in a list. A palindrome is a word that is the s
 
 
 def palindromes(arr):
-    return None
+    max = 0
+    for i in arr:
+        if i > max: max = i
+    return max
 
 
 """
