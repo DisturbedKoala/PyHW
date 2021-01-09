@@ -34,8 +34,16 @@ Return the number of palindromes in a list. A palindrome is a word that is the s
 """
 
 
-def palindromes(arr):
-    return none
+#def palindromes(arr):
+#    arr_len = len(arr)
+#    i = 0
+#    j = 0
+#    while i < arr_len:
+#        t = arr[arr_len::-1]
+#        if t == arr[arr_len]:
+#            j += 1
+#        i += 0
+#    return None
 
 
 """
