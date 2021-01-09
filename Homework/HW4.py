@@ -22,7 +22,12 @@ Return the average of a list of values using a for loop.
 
 
 def loop_average(arr):
-    return None
+    t = 0
+    i = 0
+    for i in range(0, len(arr)):
+        t += arr[i]
+        i += 1
+    return
 
 
 """
