@@ -77,4 +77,12 @@ You should use the function int(), which can convert strings into ints. For exam
 
 
 def binary(str):
-    return None
+    i = 0
+    t = 0
+    while i < len(str):
+        t += (2 ** i) * int(str[len(str) - 1 - i])
+        i += 1
+    return t
+
+str = '100000000'
+print(binary(str))
