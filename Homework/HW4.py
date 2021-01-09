@@ -7,7 +7,12 @@ Return the average of a list of values using a while loop.
 
 
 def while_average(arr):
-    return None
+    t = 0
+    i = 1
+    while i < len(arr):
+        t += arr[i]
+        i += 1
+    return t / len(arr)
 
 
 """
