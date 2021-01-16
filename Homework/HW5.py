@@ -7,7 +7,14 @@ Given the three side lengths of a triangle, return as a string whether it is equ
 
 
 def triangle_type(a, b, c):
-    return None
+    answer = 0
+    if a == b == c:
+        answer = "Equilateral"
+    elif a == b or b == c or a == c:
+        answer = "Isosceles"
+    else:
+        answer = "Scalene"
+    return answer
 
 
 """
