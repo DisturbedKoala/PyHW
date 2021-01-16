@@ -76,5 +76,5 @@ def pig_latin(word):
     if word[0] in ('a', 'e', 'i', 'o', 'u'):
         answer = word + 'way'
     else:
-        answer = word[1:] + word[0] + 'ay'
+        answer = (word[1:] + word[0] + 'ay')
     return answer
