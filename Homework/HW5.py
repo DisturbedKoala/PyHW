@@ -50,7 +50,7 @@ def caesar_cipher(message, shift):
             new_x = chr(new_ascii)
             answer += new_x
         else:
-            answer += c
+            answer += x
     return answer
 
 
