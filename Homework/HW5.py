@@ -51,9 +51,9 @@ Given a letter as a string, return a string saying whether it is a 'vowel' or 'c
 
 def is_vowel(letter):
     answer = 0
-    if letter == 'A' or letter == 'a' or letter == 'E' or letter == 'e' or letter == 'I' or letter == 'i' or letter == 'O' or letter == 'o' or letter == 'U' or letter == 'u':
+    if letter in ('A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'):
         answer = 'Vowel'
-    elif letter == 'Y' or letter == 'y':
+    elif letter in ('Y', 'y'):
         answer = 'Sometimes'
     else:
         answer = 'Consonant'
