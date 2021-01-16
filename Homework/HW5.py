@@ -40,13 +40,13 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
-    answer = 0
+    answer = ""
     for x in range(len(message)):
-        character = message[x]
-        if (character.isupper()):
-            answer += chr((ord(character) + shift - 65) % 26 + 65)
+        char = message[x]
+        if (char.isupper()):
+            answer += chr((ord(char) + shift - 65) % 26 + 65)
         else:
-            answer += chr((ord(character) + shift - 97) % 26 + 97)
+            answer += chr((ord(char) + shift - 97) % 26 + 97)
     return answer
 
 
