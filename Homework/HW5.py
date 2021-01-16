@@ -40,7 +40,14 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
-    return None
+    answer = 0
+    for x in range(len(message)):
+        character = message[x]
+        if (character.isupper()):
+            answer += chr((ord(character) + s - 65) % 26 + 65)
+        else:
+            answer += chr((ord(character) + s - 97) % 26 + 97)
+    return answer
 
 
 """
