@@ -75,6 +75,9 @@ def pig_latin(word):
     answer = 0
     if word[0] in ('aeiou'):
         answer = word + 'way'
+    elif word[1] in ('aeiou'):
+        answer = word[1:] + word[0] + 'ay'
     else:
-        answer = 'ill be back'
+        answer = word[2:] + word[0:2] + 'ay'
     return answer
+print(pig_latin('steve'))
