@@ -44,9 +44,9 @@ def caesar_cipher(message, shift):
     for x in range(len(message)):
         character = message[x]
         if (character.isupper()):
-            answer += chr((ord(character) + s - 65) % 26 + 65)
+            answer += chr((ord(character) + shift - 65) % 26 + 65)
         else:
-            answer += chr((ord(character) + s - 97) % 26 + 97)
+            answer += chr((ord(character) + shift - 97) % 26 + 97)
     return answer
 
 
