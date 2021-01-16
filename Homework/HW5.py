@@ -41,12 +41,16 @@ The table: http://www.asciitable.com/
 
 def caesar_cipher(message, shift):
     answer = ""
-    for x in range(len(message)):
-        char = message[x]
-        if (char.isupper()):
-            answer += chr((ord(char) + shift - 65) % 26 + 65)
+    for x in message:
+        if x.isupper():
+            x_ascii = ord(x)
+            x_position = ord(x) - ord("A")
+            new_position = (x_position + shift) % 26
+            new_ascii = new_position + ord("A")
+            new_x = chr(new_ascii)
+            answer += new_x
         else:
-            answer += chr((ord(char) + shift - 97) % 26 + 97)
+            answer += c
     return answer
 
 
