@@ -74,7 +74,7 @@ Implement a function that turns a word into Pig Latin. There are two rules:
 def pig_latin(word):
     answer = 0
     if word[0] in ('a', 'e', 'i', 'o', 'u'):
-        answer = word + 'yay'
+        answer = word + 'way'
     else:
         answer = word[1:] + word[0] + 'ay'
     return answer
