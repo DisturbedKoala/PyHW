@@ -20,7 +20,7 @@ def digit_sum(num):
 
 
 def hanoi(rings):
-    if rings = 1:
+    if rings == 1:
         return 1
     return 2 ** rings - 1
     """
