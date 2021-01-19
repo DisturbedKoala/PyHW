@@ -3,7 +3,7 @@
 def digit_sum(num):
     if num == 0:
         return 0
-    return (num % 10 + digit_sum(num / 10))
+    return (num % 10 + digit_sum(int(num / 10)))
     """
     Recursively compute the sum of the digits in a given number.
     In case of a negative number, ignore the negative sign.
@@ -16,8 +16,6 @@ def digit_sum(num):
     :rtype: int
     """
 
-num = 12345
-print(digit_sum(num))
 
 def hanoi(rings):
     """
