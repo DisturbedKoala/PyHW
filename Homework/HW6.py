@@ -1,10 +1,11 @@
 # WARNING: Non-recursive solutions will not be considered correct.
 
 def digit_sum(num):
-    sum = 0
-    for digit in str(num):
-        sum += int(digit)
-    return sum
+    if num == 0:
+        return 0
+    if num < 0:
+        continue
+    return (num % 10 + digit_sum(num // 10))
     """
     Recursively compute the sum of the digits in a given number.
     In case of a negative number, ignore the negative sign.
