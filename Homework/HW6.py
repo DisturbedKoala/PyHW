@@ -1,9 +1,7 @@
 # WARNING: Non-recursive solutions will not be considered correct.
 
 def digit_sum(num):
-    if num == 0:
-        return 0
-    return (num % 10 + digit_sum(int(num / 10)))
+    return None
     """
     Recursively compute the sum of the digits in a given number.
     In case of a negative number, ignore the negative sign.
