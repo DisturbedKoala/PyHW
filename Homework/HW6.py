@@ -4,7 +4,7 @@ def digit_sum(num):
     if num == 0:
         return 0
     if num < 0:
-        num = num * -1
+        num = abs(num)
     return (num % 10 + digit_sum(num // 10))
     """
     Recursively compute the sum of the digits in a given number.
@@ -20,6 +20,9 @@ def digit_sum(num):
 
 
 def hanoi(rings):
+    if rings = 1:
+        return 1
+    return 2 ** rings - 1
     """
     The Tower of Hanoi is a classic mathematical toy. You are given three rods.
     Upon the first rod are a number of discs in ascending order (largest on the bottom, smallest on top).
