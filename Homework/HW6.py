@@ -72,9 +72,9 @@ def permute(array):
     if len(array) <= 1:
         return [array]
     else:
-        for x in permute(array[1:]):
-            for t in range(len(array)):
-                return x[:t] + array[0:1] + x[t:]
+        for t in range(len(s)):
+            for x in permute(array[:t] + array[t + 1:]):
+                return array[t] + x
     """
     Recursively generate all permutations of a given list.
 
