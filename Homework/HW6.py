@@ -70,14 +70,11 @@ def subset_sum(nums, target):
 
 def permute(array):
     if len(array) <= 0:
-        return []
-    answer = []
-    for x in range(len(array)):
-        t = array[x]
-        remaining = array[:x] + array[x + 1:]
-        for y in permute(remaining):
-            answer.append([t] + y)
-    return answer
+        return array
+    else:
+        for x in permute(array[1:]):
+            for t in range(len(array)):
+                return x[:t] + array[0:1] + x[t:]
     """
     Recursively generate all permutations of a given list.
 
