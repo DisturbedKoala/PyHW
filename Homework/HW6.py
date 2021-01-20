@@ -49,10 +49,9 @@ def hanoi(rings):
 def subset_sum(nums, target):
     if target == 0:
         return True
-    if nums[0] == target:
-        return True
-    if len(nums) > 1:
-        return subset_sum(nums[1:], target - nums[0]) or subset_sum(nums[1:], target)
+    if i in range(len(nums)):
+        if subset_sum(nums[:i] + nums[i + 1:], target - nums[i]):
+            return True
     return False
 
     """
