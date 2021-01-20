@@ -73,7 +73,7 @@ def permute(array):
         return [array]
     else:
         for t in range(len(array)):
-            for x in permute(array[:t] + array[t + 1:]):
+            for x in permute(array[:t] + array[t+1:]):
                 return array[t] + x
     """
     Recursively generate all permutations of a given list.
