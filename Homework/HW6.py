@@ -71,6 +71,8 @@ def subset_sum(nums, target):
 def permute(array):
     if len(array) == 1:
         return [array]
+    if len(array) == 0:
+        return [array]
     answer = []
     for x in array:
         remainder = [t for t in array if t != x]
