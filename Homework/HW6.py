@@ -69,7 +69,7 @@ def subset_sum(nums, target):
 
 
 def permute(array):
-    if len(array) <= 0:
+    if len(array) <= 1:
         return array
     else:
         for x in permute(array[1:]):
