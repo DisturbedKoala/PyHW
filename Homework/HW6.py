@@ -52,7 +52,7 @@ def subset_sum(nums, target):
     if nums[0] == target:
         return True
     if len(nums) > 1:
-        return subset_sum(nums[1:], target - nums[0]) or subset_sum(seq[1:], target)
+        return subset_sum(nums[1:], target - nums[0]) or subset_sum(nums[1:], target)
     return False
 
     """
