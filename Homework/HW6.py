@@ -72,7 +72,7 @@ def permute(array):
     if len(array) <= 1:
         return [array]
     else:
-        for t in range(len(s)):
+        for t in range(len(array)):
             for x in permute(array[:t] + array[t + 1:]):
                 return array[t] + x
     """
