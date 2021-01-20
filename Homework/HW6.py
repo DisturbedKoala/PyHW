@@ -47,6 +47,14 @@ def hanoi(rings):
 
 
 def subset_sum(nums, target):
+    n = len(nums)
+    if target == 0:
+        return True
+    if len(nums) == 0 and target != 0:
+        return False
+    if nums[0] == target:
+        return True
+    return subset_sum(nums[1:],(target - nums[0]))
     """
     Recursively determine whether some subset of a given list of numbers sums to a target value.
     Negative values are allowed, both as the target and in the list of numbers.
