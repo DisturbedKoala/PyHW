@@ -75,7 +75,7 @@ def permute(array):
     for x in range(len(array)):
         t = array[x]
         remaining = array[:x] + array[x + 1:]
-        for y in permute(remaining)
+        for y in permute(remaining):
             answer.append([t] + y)
     return answer
     """
