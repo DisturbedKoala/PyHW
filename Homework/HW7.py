@@ -42,7 +42,6 @@ def flip_phone(message):
             if i in v:
                 for y in range(v.index(i)):
                     answer += t
-                    answer += t
     return answer
 
 
