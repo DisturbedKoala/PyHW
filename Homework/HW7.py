@@ -40,9 +40,10 @@ def flip_phone(message):
     for i in text:
         for t,v in dict.items():
             if i in v:
-                for y in range(v.index(i)):
+                for y in range(v.index(i) + 1):
                     answer += t
     return answer
+
 
 
 """
