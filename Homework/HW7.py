@@ -1,4 +1,4 @@
-# YOUR NAME HERE
+# Ken
 
 """
 Problem 1
@@ -34,7 +34,10 @@ For instance, 'zzz' has one unique character while 'Hello, World!' has 10.
 
 
 def unique_characters(string):
-    return None
+    uniquecharacters = dict()
+    for character in string:
+        uniquecharacters[character] = True
+    return len(uniquecharacters)
 
 
 """

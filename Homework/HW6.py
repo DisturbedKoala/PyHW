@@ -1,6 +1,7 @@
 # WARNING: Non-recursive solutions will not be considered correct.
 # Partner: Gaby
 
+
 def digit_sum(num):
     if num == 0:
         return 0
