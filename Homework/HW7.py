@@ -47,3 +47,23 @@ constructor in that order. Add two methods, accelerate and decelerate, which tak
 and add 10 to current_speed in accelerate and subtract 5 in decelerate. Check if accelerating will go past max_speed 
 and if decelerating will make it go past 0. If either situation happens, don't change the speed.
 """
+
+
+class Car:
+
+    def __init__(self,brand, max_speed, current_speed):
+        self.brand = brand
+        self.max_speed = max_speed
+        self.current_speed = current_speed
+
+    def accelerate(self):
+        if current_speed + 10 > max_speed:
+            continue
+        else:
+            current_speed += 10
+
+    def decelerate(self):
+        if current_speed - 5 < 0:
+            continue
+        else:
+            current_speed -= 5
