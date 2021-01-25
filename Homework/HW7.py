@@ -57,13 +57,13 @@ class Car:
         self.current_speed = current_speed
 
     def accelerate(self):
-        if current_speed + 10 > max_speed:
+        if self.current_speed + 10 > self.max_speed:
             continue
         else:
-            current_speed += 10
+            self.current_speed += 10
 
     def decelerate(self):
-        if current_speed - 5 < 0:
+        if self.current_speed - 5 < 0:
             continue
         else:
-            current_speed -= 5
+            self.current_speed -= 5
