@@ -23,7 +23,47 @@ for capitalization, you can adjust the input for the table. You can ignore every
 
 
 def flip_phone(message):
-    return None
+    text = list(message.lower())
+    dict = {
+        #this is absolutely garbage code, but i don't know how to shorten it
+        '.': '1',
+        ',': '11',
+        '?': '111',
+        '!': '1111',
+        ':': '11111',
+        'a': '2',
+        'b': '22',
+        'c': '222',
+        'd': '3',
+        'e': '33',
+        'f': '333',
+        'g': '4',
+        'h': '44',
+        'i': '444',
+        'j': '5',
+        'k': '55',
+        'l': '555',
+        'm': '6',
+        'n': '66',
+        'o': '666',
+        'p': '7',
+        'q': '77',
+        'r': '777',
+        's': '7777',
+        't': '8',
+        'u': '88',
+        'v': '888',
+        'w': '9',
+        'x': '99',
+        'y': '999',
+        'z': '9999',
+        ' ': '0'
+    }
+    for i in text:
+        for t,v in dict.items():
+            if i in v:
+                for y in range(v.index(i)):
+                    return t
 
 
 """
