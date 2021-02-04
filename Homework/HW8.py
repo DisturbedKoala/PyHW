@@ -58,7 +58,8 @@ return False since 1/31/2021 is a Sunday.
 import datetime
 
 def is_weekday(date_obj):
-    if datetime.datetime.today().weekday() < 5:
+    weekdate = datetime.datetime.today().weekday()
+    if weekdate < 5:
         return True
     else:
         return False
