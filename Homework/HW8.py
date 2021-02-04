@@ -19,15 +19,12 @@ You will be tested on all three functions.
 
 
 def is_sorted(arr):
-    sorted = None
-    i = 0
-    while i < len(arr):
-        if arr[i] < arr[i - 1]:
-            sorted = True
-        i += 1
-    if sorted = 1:
-        return True
-    return False
+    sorted = False
+    sorted_list = arr[:]
+    sorted_list.sort()
+    if sorted_list == arr:
+        sorted = True
+    return sorted
 
 
 def shuffle(arr):
