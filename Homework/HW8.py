@@ -28,11 +28,18 @@ def is_sorted(arr):
 
 
 def shuffle(arr):
-    return None
+    x = len(arr)
+    for i in range(n - 1, 0, -1):
+        t = random.randint(0, i + 1)
+        arr[i], arr[t] = arr[t], arr[i]
+    return arr
 
 
 def bogosort(arr):
-    return None
+    x= len(arr)
+    while is_sorted(arr) == False:
+        shuffle(arr)
+    return
 
 
 """
