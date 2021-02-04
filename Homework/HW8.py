@@ -21,12 +21,11 @@ You will be tested on all three functions.
 import random
 
 def is_sorted(arr):
-    sorted = False
-    sorted_list = arr[:]
-    sorted_list.sort()
-    if sorted_list == arr:
-        sorted = True
-    return sorted
+    x = len(arr)
+    for i in range(0, x - 1):
+        if a[i] > a[i + 1]:
+            return False
+    return True
 
 
 def shuffle(arr):
