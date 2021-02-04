@@ -23,7 +23,7 @@ import random
 def is_sorted(arr):
     x = len(arr)
     for i in range(0, x - 1):
-        if arr[i] > arr[i + 1]:
+        if (arr[i] > arr[i + 1]):
             return False
     return True
 
@@ -31,16 +31,15 @@ def is_sorted(arr):
 def shuffle(arr):
     x = len(arr)
     for i in range(x - 1, 0, -1):
-        t = random.randint(0, i + 1)
+        t = random.randint(0, i - 1)
         arr[i], arr[t] = arr[t], arr[i]
     return arr
 
 
 def bogosort(arr):
-    x= len(arr)
-    while is_sorted(arr) == False:
+    x = len(arr)
+    while (is_sorted(arr) == False):
         shuffle(arr)
-    return arr
 
 
 """
