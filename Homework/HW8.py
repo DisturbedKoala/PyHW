@@ -1,5 +1,4 @@
-# YOUR NAME HERE
-
+# Ken
 """
 Problem 1
 Implement bogosort on a list of numbers using the random module. The main idea of this is to shuffle an array until
@@ -31,7 +30,6 @@ def bogosort(arr):
     return None
 
 
-
 """
 Problem 2
 There are several formulas to approximate pi. I want you to return its approximation using a Machin-like formula, which
@@ -41,8 +39,10 @@ Use arctan from the math module. Its documentation is here: https://docs.python.
 """
 
 
+from math import atan
+
 def approx_pi():
-    return None
+    return 16 * atan(1/5) - 4 * atan(1/239)
 
 
 """
@@ -55,6 +55,11 @@ return False since 1/31/2021 is a Sunday.
 """
 
 
+import datetime
+
 def is_weekday(date_obj):
-    return None
+    if datetime.datetime.today().weekday() < 5:
+        return True
+    else:
+        return False
 
