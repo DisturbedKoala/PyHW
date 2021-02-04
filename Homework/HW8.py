@@ -18,6 +18,8 @@ You will be tested on all three functions.
 """
 
 
+import random
+
 def is_sorted(arr):
     sorted = False
     sorted_list = arr[:]
