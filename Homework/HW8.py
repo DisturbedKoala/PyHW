@@ -29,7 +29,7 @@ def is_sorted(arr):
 
 def shuffle(arr):
     x = len(arr)
-    for i in range(n - 1, 0, -1):
+    for i in range(x - 1, 0, -1):
         t = random.randint(0, i + 1)
         arr[i], arr[t] = arr[t], arr[i]
     return arr
