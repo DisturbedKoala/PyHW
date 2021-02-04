@@ -33,7 +33,6 @@ def shuffle(arr):
     for i in range(x - 1, 0, -1):
         t = random.randint(0, i - 1)
         arr[i], arr[t] = arr[t], arr[i]
-    return arr
 
 
 def bogosort(arr):
