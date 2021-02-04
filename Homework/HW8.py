@@ -22,18 +22,17 @@ import random
 
 def is_sorted(arr):
     x = len(arr)
-    for i in range(0, x - 1):
+    if x < 2:
+        return True
+    for i in range(x - 1):
         if (arr[i] > arr[i + 1]):
             return False
     return True
 
 
 def shuffle(arr):
-    x = len(arr)
-    for i in range(x - 1, 0, -1):
-        t = random.randint(0, i - 1)
-        arr[i], arr[t] = arr[t], arr[i]
-
+    while not is_sorted(arr):
+        random.shuffle(arr)
 
 def bogosort(arr):
     x = len(arr)
