@@ -39,6 +39,7 @@ def bogosort(arr):
     x = len(arr)
     while (is_sorted(arr) == False):
         shuffle(arr)
+    return arr
 
 
 """
