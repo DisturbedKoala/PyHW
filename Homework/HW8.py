@@ -31,8 +31,7 @@ def is_sorted(arr):
 
 
 def shuffle(arr):
-    while not is_sorted(arr):
-        random.shuffle(arr)
+    random.shuffle(arr)
     return arr
 
 def bogosort(arr):
