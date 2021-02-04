@@ -23,7 +23,7 @@ import random
 def is_sorted(arr):
     x = len(arr)
     for i in range(0, x - 1):
-        if a[i] > a[i + 1]:
+        if arr[i] > arr[i + 1]:
             return False
     return True
 
